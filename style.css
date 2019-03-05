@@ -1,0 +1,49 @@
+.wrapper {
+    position: relative;
+    height: 100%;
+    background-color: #F5F5DC;
+}
+main{
+    position: relative;
+    height: 80%;
+    background-color: black;
+}
+.header {
+    position: fixed;
+    background-color: blue;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 20%;
+}
+
+/*****************page-top***************************/
+.title {
+    background-color: red;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 20%;
+    height: 20%;
+    width: 30%;
+}
+/*****************page-about*************************/
+.sub-title {
+    background-color: red;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 20%;
+    width: 30%;
+}
+/*****************page-character*********************/
+/*****************page-combat************************/
+/*****************page-news**************************/
+/*****************page-contact***********************/
