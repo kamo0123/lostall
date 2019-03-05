@@ -6,6 +6,7 @@ body{
     margin: 0;
     height: 100%;
 }
-a{
-    list-style: none;
+li,a {
+    list-style-type: none;
+    text-decoration: none;
 }
