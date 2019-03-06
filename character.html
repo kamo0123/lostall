@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>CHARACTER | lost all</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="sanitize.css">
-    <!--
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.css"> -->
 </head>
 
 <body>
@@ -15,11 +14,28 @@
     <div class="wrapper">
         <!-- header -->
         <header>
+            <!-- hamburger-icon -->
+            <div id="nav-drawer">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><span></span></label>
+                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                <div id="nav-content">
+                    <ul class="gl-nav-content">
+                        <li><a href="index.html">top</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="character.html">character</a></li>
+                        <li><a href="combat.html">combat</a></li>
+                        <li><a href="news.html">news</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- hamburger-icon -->
             <div class="header">
                 <ul>
                     <li><a href="index.html">top</a></li>
                     <li><a href="about.html">about</a></li>
-                    <li>character</li>
+                    <li><a href="character.html">character</a></li>
                     <li><a href="combat.html">combat</a></li>
                     <li><a href="news.html">news</a></li>
                     <li><a href="contact.html">contact</a></li>
@@ -29,7 +45,12 @@
         <!-- header -->
         <!-- main -->
         <main>
-            <h1 class="sub-title">sub-title</h1>
+            <div class="heading">
+                <h1 class="sub-title">character</h1>
+                <p class="sub-title-description">キャラクター</p>
+            </div>
+
+            <div class="content">content</div>
         </main>
         <!-- main -->
         <!-- footer --><!--

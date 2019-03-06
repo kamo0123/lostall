@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>CONTACT | lost all</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel=" stylesheet" href="style.css">
     <link rel="stylesheet" href="sanitize.css">
-    <!--
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.css"> -->
 </head>
 
 <body>
@@ -15,6 +14,23 @@
     <div class="wrapper">
         <!-- header -->
         <header>
+            <!-- hamburger-icon -->
+            <div id="nav-drawer">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><span></span></label>
+                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                <div id="nav-content">
+                    <ul class="gl-nav-content">
+                        <li><a href="index.html">top</a></li>
+                        <li><a href="about.html">about</a></li>
+                        <li><a href="character.html">character</a></li>
+                        <li><a href="combat.html">combat</a></li>
+                        <li><a href="news.html">news</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- hamburger-icon -->
             <div class="header">
                 <ul>
                     <li><a href="index.html">top</a></li>
@@ -22,17 +38,59 @@
                     <li><a href="character.html">character</a></li>
                     <li><a href="combat.html">combat</a></li>
                     <li><a href="news.html">news</a></li>
-                    <li>contact</li>
+                    <li><a href="contact.html">contact</a></li>
                 </ul>
             </div>
         </header>
         <!-- header -->
         <!-- main -->
         <main>
-            <h1 class="sub-title">sub-title</h1>
+            <div class="heading">
+                <h1 class="sub-title">contact</h1>
+                <p class="sub-title-description">コンタクト</p>
+            </div>
+
+            <div class="content">
+                <section class="contact">
+                    <div class="leader">
+                        <h2 id="contact">お問い合わせ</h2>
+                        <p class="description">お問い合わせ内容をご入力ください。<br>〇営業日以内に返信させていただきます。</p>
+                        <p class="required"><span class="required-span">*</span> 入力必須項目</p>
+                    </div>
+                    <div class="contact-box">
+                        <form action="" method="post">
+                            <p class="form_name">
+                                <label>お名前<span class="required-span">*</span><br>
+                                    <input type="text" name=“nameId” size=“12” maxlength=“20” placeholder="name" required></label>
+                            </p>
+                            <p class="form_name">
+                                <label>フリガナ<span class="required-span">*</span><br>
+                                    <input type="text" name="kana" placeholder="kana" required>
+                                </label>
+                            </p>
+                            <p class="form_name">
+                                <label>メール<span class="required-span">*</span><br><input type="email" name="email" placeholder="e-mail" required></label>
+                            </p>
+                            <p class="form_name">
+                                <label>電話番号<br>
+                                    <input type="tel" name="tel" placeholder="tel"></label>
+                            </p>
+                            <p class="form_name">
+                                <label>お問い合わせ内容<span class="required-span">*</span><br>
+                                    <textarea name=“message” placeholder="message" required></textarea>
+                                </label>
+                            </p>
+                            <p class="submit">
+                                <input class="submit" type="submit" name="submit" value="送信">
+                            </p>
+                        </form>
+                    </div>
+                </section>
+            </div>
         </main>
         <!-- main -->
-        <!-- footer --><!--
+        <!-- footer -->
+        <!--
         <footer>
             <p class="footer">footer</p>
         </footer> -->

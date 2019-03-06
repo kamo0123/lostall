@@ -1,0 +1,12 @@
+/*********all************/
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+li,a {
+    list-style-type: none;
+    text-decoration: none;
+}
