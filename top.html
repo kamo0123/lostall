@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>TOP | lost all</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sanitize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+    $(function() {
+        var h = $(window).height();
+
+        $('#wrap').css('display', 'none');
+        $('#loader-bg ,#loader').height(h).css('display', 'block');
+    });
+    //4秒たったら強制的にロード画面を非表示
+    $(function() {
+        setTimeout('stopload()', 4000);
+    });
+
+    function stopload() {
+        $('#wrap').css('display', 'block');
+        $('#loader-bg').delay(900).fadeOut(800);
+        $('#loader').delay(600).fadeOut(300);
+    }
+    </script>
+</head>
+
+<body>
+    <div id="loader-bg">
+        <div id="loader">
+            <div class="smoky">
+                <span class="sand">こ</span>
+                <span class="sand">れ</span>
+                <span class="sand">か</span>
+                <span class="sand">ら</span>
+                <span class="sand">旅</span>
+                <span class="sand">に</span>
+                <span class="sand">出</span>
+                <span class="sand">る</span>
+                <span class="sand"></span>
+                <span class="sand">"</span>
+                <span class="sand">君</span>
+                <span class="sand">"</span>
+                <span class="sand">へ</span>
+            </div>
+        </div>
+    </div>
+    <div id="wrap"><a href="index.html">start</a></div>
+</body>
+
+</html>
