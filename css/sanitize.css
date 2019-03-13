@@ -11,7 +11,8 @@ body{
     margin: 0;
     border: none;
     height: 100%;
-    background-color: #F5F5DC;
+    background: url(../images/back02.png) no-repeat;
+    background-size: contain;
 }
 li,a {
     list-style-type: none;

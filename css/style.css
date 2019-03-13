@@ -4,8 +4,8 @@
 
 /*****************fade-in****************************/
 .title {
-    animation: fadeIn 3s ease 0s 1 normal;
-    -webkit-animation: fadeIn 3s ease 0s 1 normal;
+    animation: fadeIn 5s ease-in 0s 1 normal;
+    -webkit-animation: fadeIn 5s ease-in 0s 1 normal;
 }
 .content {
     animation: fadeIn 1s ease 0s 1 normal;
@@ -28,7 +28,16 @@
         opacity: 1
     }
 }
-
+/*****************scroll02****************************/
+.about-p {
+    position: absolute;
+    top: 75%;
+    animation: scroll02 10s linear 0s forwards;
+}
+@keyframes scroll02 {
+    0% { top: 75%; }
+    100% { top: -5%; }
+}
 /*****************smoky****************************/
 #wrap {
     width: 100%;
@@ -95,11 +104,9 @@
   text-shadow: 0 0 0 whitesmoke;
   animation: smoky 4s 3.2s both;
 }
-
 .sand:nth-child(even){
   animation-name: smoky-mirror;
 }
-
 @keyframes smoky {
   60% {
     text-shadow: 0 0 40px whitesmoke;
@@ -154,18 +161,15 @@
     height: 100%;
     width: 80%;
     margin: 0 auto;
-    background-color: #333;
 }
-
-main {
+.main {
     position: relative;
     height: 80%;
-    background-color: black;
+    background: url(../images/scroll02.png) no-repeat;
+    background-size: contain;
 }
-
 .header {
     position: fixed;
-    background-color: blue;
     bottom: 0;
     left: 0;
     right: 0;
@@ -173,6 +177,9 @@ main {
     padding: 0;
     width: 100%;
     height: 20%;
+    background: url(../images/nav03.png) no-repeat;
+    background-position: bottom;
+    z-index: 1000;
 }
 
 ul {
@@ -209,9 +216,10 @@ li {
     left: 0;
     right: 0;
     margin: auto;
+    background: none;
+    overflow: auto;
 }
 .heading {
-    background-color: purple;
     position: absolute;
     margin: auto;
     top: 0px;
@@ -237,8 +245,62 @@ li {
 }
 
 /*****************page-about*************************/
-
+.about-p {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 /*****************page-character*********************/
+.character {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+.hero {
+  width: 80%;
+  height: 60%;
+  margin: 10% auto;
+  position: relative;
+}
+.hero:nth-of-type(1) {
+  margin: 0 auto;
+}
+.hero-img {
+  position: absolute;
+  left: 0;
+  text-indent: -9999px;
+  background-color: pink;
+  width: 30%;
+  height: 80%;
+  margin: 10% 0 10%;
+}
+.hero-img:nth-of-type(even) {
+  position: absolute;
+  right: 0;
+}
+.hero-description {
+  width: 60%;
+  height: 85%;
+  margin: 10% 0 10%;
+  position: absolute;
+  right: 0;
+}
+.hero-description:nth-of-type(even) {
+  position: absolute;
+  left: 0;
+}
+.hero-name {
+  width: 70%;
+  height: 15%;
+  margin: 0;
+}
+.hero-p {
+  font-size: 90%;
+  width: 100%;
+  height: 85%;
+}
 /*****************page-combat************************/
 /*****************page-news**************************/
 .news-title,
@@ -364,7 +426,7 @@ li {
         height: 10%;
         width: 100%;
         background-color: green;
-        z-index: 999;
+        z-index: 1000;
     }
 
     #nav-drawer {
