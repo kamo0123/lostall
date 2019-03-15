@@ -4,8 +4,8 @@
 
 /*****************fade-in****************************/
 .title {
-    animation: fadeIn 5s ease-in 0s 1 normal;
-    -webkit-animation: fadeIn 5s ease-in 0s 1 normal;
+    animation: fadeIn 3s ease-in 0s 1 normal;
+    -webkit-animation: fadeIn 3s ease-in 0s 1 normal;
 }
 .content {
     animation: fadeIn 1s ease 0s 1 normal;
@@ -38,103 +38,19 @@
     0% { top: 75%; }
     100% { top: -5%; }
 }
-/*****************smoky****************************/
-#wrap {
-    width: 100%;
-    height: 100%;
-}
-.smoky {
-  background: black;
-  overflow: hidden;
-  font: 5vw/100vh "Finger Paint";
-  text-align: center;
-  color: transparent;
-  backface-visibility: hidden;
-}
-.sand:nth-child(1) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 2s both;
-}.sand:nth-child(2) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 2.2s both;
-}.sand:nth-child(3) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 2.2s both;
-}.sand:nth-child(4) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 2.3s both;
-}.sand:nth-child(5) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 2.4s both;
-}.sand:nth-child(6) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 2.5s both;
-}.sand:nth-child(7) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 2.6s both;
-}.sand:nth-child(8) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 2.7s both;
-}.sand:nth-child(9) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 2.8s both;
-}.sand:nth-child(10) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 2.9s both;
-}.sand:nth-child(11) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 3s both;
-}.sand:nth-child(12) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 3.1s both;
-}.sand:nth-child(13) {
-  display: inline-block;
-  text-shadow: 0 0 0 whitesmoke;
-  animation: smoky 4s 3.2s both;
-}
-.sand:nth-child(even){
-  animation-name: smoky-mirror;
-}
-@keyframes smoky {
-  60% {
-    text-shadow: 0 0 40px whitesmoke;
-  }
-  100% {
-    transform:
-      translate3d(15rem,-8rem,0)
-      rotate(-40deg)
-      skewX(70deg)
-      scale(1.5);
-    text-shadow: 0 0 20px whitesmoke;
-    opacity: 0;
-  }
-}
-@keyframes smoky-mirror {
-  60% {
-    text-shadow: 0 0 40px whitesmoke; }
-  100% {
-    transform:
-      translate3d(18rem,-8rem,0)
-      rotate(-40deg)
-      skewX(-70deg)
-      scale(2);
-     text-shadow: 0 0 20px whitesmoke;
-    opacity: 0;
-  }
-}
+/*****************typing****************************/
+@keyframes typing { from { width: 0; } }
+@keyframes caret { 100% { border-color: transparent; } }
 
+.sand {
+font-family: monospace;
+width: 100%;
+border-right: .08em solid;
+overflow: hidden;
+font-size: 4em;
+white-space: nowrap;
+animation: typing 3s steps(20, end), caret .5s step-end infinite;
+}
 /*****************page-change****************************/
 #loader-bg {
   display: none;
@@ -155,6 +71,8 @@
   color: #fff;
   z-index: 2;
 }
+/*animation*/
+
 /*****************page-all***************************/
 .wrapper {
     position: relative;
@@ -390,7 +308,11 @@ table {
   padding: 5% 0 0 0;
   margin: 3%;
 }
+<<<<<<< HEAD
 /*****************page-combat************************/
+=======
+/*****************page-operation************************/
+>>>>>>> 6df87ceb18b8e9671c1ef5733a7b8eba53068d06
 /*****************page-news**************************/
 .news-title,
 .news-title-description,
